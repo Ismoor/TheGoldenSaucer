@@ -1,0 +1,39 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  h1.flow-text {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  h2.flow-text {
+    font-size: 2em;
+    margin-top: 30px;
+  }
+  
+  h5 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #757575;
+  }
+  
+  .responsive-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .entry-row {
+    margin-top: 20px;
+  }
+  
+  .entry-row .col.s8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  

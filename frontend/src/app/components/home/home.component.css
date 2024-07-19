@@ -1,0 +1,26 @@
+.container {
+    padding-top: 20px;
+  }
+  
+  .responsive-img {
+    width: 100%;
+  }
+  
+  .center-align {
+    text-align: center;
+  }
+  
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    margin: 0;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  .golden{
+    color: #FFD700 !important;
+  }

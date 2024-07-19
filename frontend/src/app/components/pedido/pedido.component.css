@@ -1,0 +1,18 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  h1.flow-text {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .btn.gold {
+    background-color: #000000;
+  }
+  
+  .btn.gold:hover {
+    background-color: #000;
+  }
+  

@@ -1,0 +1,20 @@
+.gold {
+  background-color: #000000 !important; /* Color oro */
+  height: 100px; /* Ajusta este valor para aumentar la altura del nav */
+  line-height: 100px; /* Asegura que el contenido esté centrado verticalmente */
+}
+
+/* Asegúrate de que la imagen sea responsiva */
+.logo-img {
+  height: 80px; /* Ajusta este valor según sea necesario */
+  margin-top: 10px; /* Ajusta el margen superior si es necesario */
+  margin-bottom: 10px; /* Ajusta el margen inferior si es necesario */
+}
+
+/* Ajusta el padding de los elementos de navegación */
+#nav-mobile > li > a {
+  height: 100px; /* Coincide con la altura del nav */
+  line-height: 100px; /* Centra el texto verticalmente */
+  padding: 0 15px; /* Ajusta el padding horizontal si es necesario */
+  font-size: 18px; /* Ajusta el tamaño de la fuente si es necesario */
+}

@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col s8">
+      <h1 class="flow-text">Descubre NUESTRO MENÚ</h1>
+    </div>
+    <div class="col s4">
+      <img src="assets/menu_plato.jpg" class="responsive-img" alt="Menu Image">
+    </div>
+  </div>
+
+  <div class="row">
+    <h2 class="flow-text">Nuestros platillos</h2>
+  </div>
+
+  <div class="row entry-row" *ngFor="let plato of platos">
+    <div class="col s8">
+      <h5>{{ plato.name }}</h5>
+      <p>{{ plato.description }}</p>
+      <p><strong>Precio:</strong> {{ plato.price | currency }}</p>
+      <p><strong>Categoría:</strong> {{ plato.category }}</p>
+    </div>
+    <div class="col s4">
+      <img src="assets/plato_home{{ plato._id }}.jpg" class="responsive-img" alt="Entrada {{ plato._id }}">
+    </div>
+  </div>
+</div>

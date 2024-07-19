@@ -1,0 +1,10 @@
+/* Para cambiar el fondo del footer a negro */
+.page-footer.black {
+    background-color: #000000; /* Cambia el color de fondo a negro */
+  }
+  
+  /* Para cambiar el color del texto dentro del footer a blanco */
+  .page-footer.black .white-text {
+    color: #ffffff; /* Cambia el color del texto a blanco */
+  }
+  
