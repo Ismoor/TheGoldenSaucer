@@ -44,10 +44,14 @@
           </select>
         </div>
       </div>
-
       <div class="row center-align">
         <button class="btn waves-effect waves-light gold" type="submit" [disabled]="!pedidoForm.valid">
           <i class="material-icons right">Enviar Pedido</i>
+        </button>
+        <br>
+        <br>
+        <button class="btn waves-effect waves-light gold" routerLink="/updatePedido" >
+          <i class="material-icons right">Ver Pedidos</i>
         </button>
       </div>
     </form>

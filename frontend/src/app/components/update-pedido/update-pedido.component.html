@@ -1,0 +1,54 @@
+<div class="container">
+    <h1 class="center-align">Actualizar Pedido</h1>
+    <div class="row">
+      <form class="col s12" [formGroup]="pedidoForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" formControlName="nombres" type="text" class="validate" required>
+            <label for="first_name">Nombre</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" formControlName="apellidos" type="text" class="validate" required>
+            <label for="last_name">Apellido</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" formControlName="correo" type="email" class="validate" required>
+            <label for="email">Correo Electrónico</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="address" formControlName="direccion" type="text" class="validate" required>
+            <label for="address">Dirección</label>
+          </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+              <select id="platillo" formControlName="detalles_pedido" class="browser-default" required>
+                <option value="" disabled selected>Elige un platillo</option>
+                <option *ngFor="let plato of platos" [value]="plato.name">
+                  {{ plato.name }}
+                </option>
+              </select>
+            </div>
+          </div>
+        <div class="row center-align">
+          <button class="btn waves-effect waves-light" type="submit" [disabled]="!pedidoForm.valid">
+            Actualizar Pedido
+          </button>
+        </div>
+      </form>
+    </div>
+    <h2 class="center-align">Lista de Pedidos</h2>
+    <ul class="collection">
+      <li *ngFor="let pedido of pedidos" class="collection-item">
+        <span>{{ pedido.nombres }} {{ pedido.apellidos }} - {{ pedido.detalles_pedido }}</span>
+        <button class="btn red right" (click)="selectPedido(pedido)">
+          <i class="material-icons">edit</i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  

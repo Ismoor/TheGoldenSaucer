@@ -17,7 +17,13 @@
       <h5>{{ plato.name }}</h5>
       <p>{{ plato.description }}</p>
       <p><strong>Precio:</strong> {{ plato.price | currency }}</p>
-      <p><strong>Categoría:</strong> {{ plato.category }}</p>
+      <p><strong>Categoría:</strong> {{ plato.category }}
+        <br>
+        <br>
+        <button class="btn waves-effect waves-light gold" routerLink="/pedido" >
+          <i class="material-icons right">Realizar Pedido</i>
+        </button>
+      </p>
     </div>
     <div class="col s4">
       <img src="assets/plato_home{{ plato._id }}.jpg" class="responsive-img" alt="Entrada {{ plato._id }}">

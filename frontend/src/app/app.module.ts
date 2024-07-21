@@ -11,6 +11,8 @@ import { PedidoComponent } from './components/pedido/pedido.component';
 import { CalificacionComponent } from './components/calificacion/calificacion.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
+import { UpdatePedidoComponent } from './components/update-pedido/update-pedido.component';
+import { DeleteCalificacionComponent } from './components/delete-calificacion/delete-calificacion.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { HomeComponent } from './components/home/home.component';
     PedidoComponent,
     CalificacionComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    UpdatePedidoComponent,
+    DeleteCalificacionComponent
   ],
   imports: [
     BrowserModule,
